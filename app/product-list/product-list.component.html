@@ -40,10 +40,10 @@
               XXX
             </th>
             <th>{{ product.code }}</th>
-            <th>{{ product.name }}</th>
+            <th>{{ product.name | uppercase | productName: "-" }}</th>
             <th>{{ product.price | number: "1.2-2" }}</th>
-            <th>Yes</th>
-            <th>****</th>
+            <th>{{ product.available }}</th>
+            <th>{{ product.rating }}</th>
           </tr>
         </tbody>
         <tbody *ngIf="products.length == 0">
