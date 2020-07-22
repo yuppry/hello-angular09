@@ -7,6 +7,7 @@ import { LoginComponent } from "./login/login.component";
 import { ProductListComponent } from "./product-list/product-list.component";
 import { ProductNamePipe } from "./pipe/product-name.pipe";
 import { ProductFilterPipe } from "./pipe/product-filter.pipe";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { ProductFilterPipe } from "./pipe/product-filter.pipe";
     ProductNamePipe,
     ProductFilterPipe,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

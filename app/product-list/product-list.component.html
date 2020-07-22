@@ -31,7 +31,7 @@
         <tbody *ngIf="products.length > 0">
           <tr *ngFor="let product of products | productFilter: filterData">
             <th>
-              XXX
+              <a href="{{ product.imageUrl }}">image</a>
             </th>
             <th>{{ product.code }}</th>
             <th>{{ product.name | uppercase | productName: "-" }}</th>
